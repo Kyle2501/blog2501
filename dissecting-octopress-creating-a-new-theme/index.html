@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Dissecting Octopress; Creating a New Theme [part 01] - About Robots and Humans for Hackers</title>
+  <meta name="author" content="Kyle2501">
+
+  
+  <meta name="description" content="This series of posts will be written and updated in an ongoing process until we understand best how to create a new theme for Octopress. My girl &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme">
+  <link href="/blog2501/favicon.png" rel="icon">
+  <link href="/blog2501/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/blog2501/javascripts/modernizr-2.0.js"></script>
+  <script src="/blog2501/javascripts/ender.js"></script>
+  <script src="/blog2501/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/blog2501/atom.xml" rel="alternate" title="About Robots and Humans for Hackers" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+
+  <header role="banner"><div id="logo"><img src="../../images/manifest.png" /></div>
+
+<p align="center">
+<a href="/blog2501/"><img src="../../images/home.png" width="30px" /></a>
+<a href="/blog2501/"><img src="../../images/about.png" width="30px" /></a>
+<a href="/blog2501/"><img src="../../images/mail.png" width="30px" /></a>
+<a href="/blog2501/"><img src="../../images/rss2.png" width="30px" /></a>
+</p>
+
+
+
+</header>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Dissecting Octopress; Creating a New Theme [Part 01]</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-18T17:05:00-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This series of posts will be written and updated in an ongoing process until we understand best how to create a new theme for Octopress. My girl friend is doing the design &#8211; I am doing the development. We both installed Octopress this week and are running it on GitHub Pages. Her&#8217;s can be found here <a href="http://uwenna.github.com/test/">uwenna</a>.</p>
+
+<p>For now these posts act as a brainstorm with myself&#8230; then will be broken up into better sections for publishing.</p>
+
+<hr />
+
+<p><strong>What is understood about Octopress themes so far:</strong></p>
+
+<p>There is a file called _config.yml which acts as a central reference place. This file controls data through out the site such as author name, titles, URL structure, plugin settings.</p>
+
+<p>The theme is broken down into sections and put into individual .html and .scss files. These html files link and reference each other, using the { % -__- %  format.</p>
+
+<p>The theme files are stored in a hidden file called &#8216;.themes&#8217; but are duplicated and can be accessed in the root folder.</p>
+
+<p>A theme&#8217;s folder has two folders: &#8216;sass&#8217; and &#8216;source&#8217;. &#8216;sass&#8217; is the styling &#8211; &#8216;source&#8217; is the structure.</p>
+
+<hr />
+
+<p><strong>How the default theme is built:</strong></p>
+
+<p>The defalut theme is called &#8216;classic&#8217; and is created in the following way: <br/>
+[25 scss files, 30 html files, 9 js files]</p>
+
+<p>(folder) <strong>.themes > classic > sass:</strong> [3 files, 3 folders]</p>
+
+<ul>
+<li>_base.scss</li>
+<li>_partials.scss</li>
+<li>base (folder)</li>
+<li>custom (folder)</li>
+<li>partials (folder)</li>
+<li>screen.scss</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > sass > base:</strong> [5 files, 0 folders]</p>
+
+<ul>
+<li>_layout.scss</li>
+<li>_solarized.scss</li>
+<li>_theme.scss</li>
+<li>_typography.scss</li>
+<li>_utilites.scss</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > sass > custom:</strong> [4 files, 0 folders]</p>
+
+<ul>
+<li>_colors.scss</li>
+<li>_fonts.scss</li>
+<li>_layout.scss</li>
+<li>_styles.scss</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > sass > partials:</strong> [8 files, 1 folder]</p>
+
+<ul>
+<li>_archive.scss</li>
+<li>_blog.scss</li>
+<li>_footer.scss</li>
+<li>_header.scss</li>
+<li>_navigation.scss</li>
+<li>_sharing.scss</li>
+<li>_sidebar.scss</li>
+<li>_syntax.scss</li>
+<li>sidebar (folder)</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > sass > partials > sidebar:</strong> [5 files, 0 folders]</p>
+
+<ul>
+<li>_base.scss</li>
+<li>_delicious.scss</li>
+<li>_googleplus.scss</li>
+<li>_pinboard.scss</li>
+<li>_twitter.scss</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source:</strong> [3 files, 6 folders]</p>
+
+<ul>
+<li>_includes (folder)</li>
+<li>_layouts (folder)</li>
+<li>assets (folder)</li>
+<li>atom.xml</li>
+<li>blog (folder)</li>
+<li>favicon.png</li>
+<li>images (folder)</li>
+<li>index.html</li>
+<li>javascripts (folder)</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _includes:</strong> [12 files, 3 folders]</p>
+
+<ul>
+<li>after_footer.html</li>
+<li>archive_post.html</li>
+<li>article.html</li>
+<li>asides (folder)</li>
+<li>custom (folder)</li>
+<li>discus.html</li>
+<li>facebook_like.html</li>
+<li>footer.html</li>
+<li>google_analytics.html</li>
+<li>google_plus_one.html</li>
+<li>head.html</li>
+<li>header.html</li>
+<li>navigation.html</li>
+<li>post (folder)</li>
+<li>twitter_sharing.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _includes > asides:</strong> [6 files, 0 folders]</p>
+
+<ul>
+<li>delicious.html</li>
+<li>github.html</li>
+<li>googleplus.html</li>
+<li>pinboard.html</li>
+<li>recent_posts.html</li>
+<li>twitter.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _includes > custom:</strong> [6 files, 1 folder]</p>
+
+<ul>
+<li>after_footer.html</li>
+<li>asides (folder)</li>
+<li>category_feed.xml</li>
+<li>footer.html</li>
+<li>head.html</li>
+<li>header.html</li>
+<li>navigation.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _includes > custom:</strong> [1 file, 0 folders]</p>
+
+<ul>
+<li>about.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > blog > archives:</strong> [1 file, 0 folder]</p>
+
+<ul>
+<li>index.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _layouts:</strong> [4 files, 0 folders]</p>
+
+<ul>
+<li>category_index.html</li>
+<li>default.html</li>
+<li>page.html</li>
+<li>post.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > javascripts:</strong> [6 files, 1 folder]</p>
+
+<ul>
+<li>ender.js</li>
+<li>github.js</li>
+<li>libs (folder)</li>
+<li>modernizer.js</li>
+<li>octopross.js</li>
+<li>pinboard.js</li>
+<li>twitter.js</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > javascripts > libs:</strong> [3 files, 0 folders]</p>
+
+<ul>
+<li>ender.js</li>
+<li>jXHR.js</li>
+<li>swfobject-dynamic.js</li>
+</ul>
+
+
+<hr />
+
+<p><strong>Which of these do we consider to have value?</strong></p>
+
+<p>The theme is set up in such a way where it provides tools to customize it, they can be found here &#8211;</p>
+
+<p>(folder) <strong>.themes > classic > sass > custom:</strong> [4 files, 0 folders]</p>
+
+<ul>
+<li>_colors.scss</li>
+<li>_fonts.scss</li>
+<li>_layout.scss</li>
+<li>_styles.scss</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _includes > custom:</strong> [6 files, 1 folder]</p>
+
+<ul>
+<li>after_footer.html</li>
+<li>asides (folder)</li>
+<li>category_feed.xml</li>
+<li>footer.html</li>
+<li>head.html</li>
+<li>header.html</li>
+<li>navigation.html</li>
+</ul>
+
+
+<p>(folder) <strong>.themes > classic > source > _includes > custom:</strong> [1 file, 0 folders]</p>
+
+<ul>
+<li>about.html</li>
+</ul>
+
+
+<hr />
+
+<p>[25 scss files, 30 html files, 9 js files]<br/>
+<strong>Thats alot! Beyond the custom folders which theme files are the important ones, which are just supportive and how many are little add-ons / plug-ins? &#8230;</strong></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Kyle2501</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-18T17:05:00-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog2501/categories/brainstrom/'>brainstrom</a>, <a class='category' href='/blog2501/categories/dissecting-octopress/'>dissecting_octopress</a>, <a class='category' href='/blog2501/categories/themeing/'>themeing</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme" data-via="kyle2501" data-counturl="http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog2501/food" title="Previous Post: Food">&laquo; Food</a>
+      
+      
+        <a class="basic-alignment right" href="/blog2501/hi-test" title="next Post: hi test">hi test &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <p align="right">Tags #</p>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Kyle2501 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'kyle2501';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme';
+        var disqus_url = 'http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hihi | About Robots and Humans for Hackers]]></title>
+  <link href="http://kyle2501.github.com/blog2501/categories/hihi/atom.xml" rel="self"/>
+  <link href="http://kyle2501.github.com/blog2501/"/>
+  <updated>2012-03-22T18:34:47-04:00</updated>
+  <id>http://kyle2501.github.com/blog2501/</id>
+  <author>
+    <name><![CDATA[Kyle2501]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Machine Feelings]]></title>
+    <link href="http://kyle2501.github.com/blog2501/machine-feelings"/>
+    <updated>2012-02-17T21:22:00-05:00</updated>
+    <id>http://kyle2501.github.com/blog2501/machine-feelings</id>
+    <content type="html"><![CDATA[<p>Do machines have feelings? What are feelings defined as?</p>
+]]></content>
+  </entry>
+  
+</feed>
