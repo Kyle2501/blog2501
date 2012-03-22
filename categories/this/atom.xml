@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: this | About Robots and Humans for Hackers]]></title>
-  <link href="http://kyle2501.github.com/blog2501/categories/this/atom.xml" rel="self"/>
-  <link href="http://kyle2501.github.com/blog2501/"/>
-  <updated>2012-03-22T18:34:47-04:00</updated>
-  <id>http://kyle2501.github.com/blog2501/</id>
+  <link href="http://Kyle2501.github.com/blog2501/categories/this/atom.xml" rel="self"/>
+  <link href="http://Kyle2501.github.com/blog2501/"/>
+  <updated>2012-03-22T19:03:37-04:00</updated>
+  <id>http://Kyle2501.github.com/blog2501/</id>
   <author>
     <name><![CDATA[Kyle2501]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[things-go-here]]></title>
-    <link href="http://kyle2501.github.com/blog2501/things-go-here"/>
+    <link href="http://Kyle2501.github.com/blog2501/things-go-here"/>
     <updated>2012-02-19T18:14:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/things-go-here</id>
+    <id>http://Kyle2501.github.com/blog2501/things-go-here</id>
     <content type="html"><![CDATA[<p>hi hi there this is a post about who knows what but i am posting it here now lets go!</p>
 ]]></content>
   </entry>

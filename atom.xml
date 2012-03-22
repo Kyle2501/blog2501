@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[About Robots and Humans for Hackers]]></title>
-  <link href="http://kyle2501.github.com/blog2501/atom.xml" rel="self"/>
-  <link href="http://kyle2501.github.com/blog2501/"/>
-  <updated>2012-03-22T18:34:47-04:00</updated>
-  <id>http://kyle2501.github.com/blog2501/</id>
+  <link href="http://Kyle2501.github.com/blog2501/atom.xml" rel="self"/>
+  <link href="http://Kyle2501.github.com/blog2501/"/>
+  <updated>2012-03-22T19:03:37-04:00</updated>
+  <id>http://Kyle2501.github.com/blog2501/</id>
   <author>
     <name><![CDATA[Kyle2501]]></name>
     
@@ -15,90 +15,90 @@
   
   <entry>
     <title type="html"><![CDATA[everybody loves new things]]></title>
-    <link href="http://kyle2501.github.com/blog2501/everybody-loves-new-things"/>
+    <link href="http://Kyle2501.github.com/blog2501/everybody-loves-new-things"/>
     <updated>2012-03-22T17:56:00-04:00</updated>
-    <id>http://kyle2501.github.com/blog2501/everybody-loves-new-things</id>
+    <id>http://Kyle2501.github.com/blog2501/everybody-loves-new-things</id>
     <content type="html"><![CDATA[<p>yes they do. this post is a test.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[IDs and Classes in CSS]]></title>
-    <link href="http://kyle2501.github.com/blog2501/ids-and-classes-in-css"/>
+    <link href="http://Kyle2501.github.com/blog2501/ids-and-classes-in-css"/>
     <updated>2012-03-03T23:54:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/ids-and-classes-in-css</id>
+    <id>http://Kyle2501.github.com/blog2501/ids-and-classes-in-css</id>
     <content type="html"><![CDATA[<p>When to use IDs and when to use a Class in CSS while styling a Div? Idea: what if you used both and id and a class for every div. Each div would then be identified with a label. The idea is you use an id to define the layout (position on the page) and you would use classes to style the appearance. What do you think? More thought to follow&#8230;</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[things3fd]]></title>
-    <link href="http://kyle2501.github.com/blog2501/things3fd"/>
+    <link href="http://Kyle2501.github.com/blog2501/things3fd"/>
     <updated>2012-02-19T18:31:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/things3fd</id>
+    <id>http://Kyle2501.github.com/blog2501/things3fd</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[things3f]]></title>
-    <link href="http://kyle2501.github.com/blog2501/things3f"/>
+    <link href="http://Kyle2501.github.com/blog2501/things3f"/>
     <updated>2012-02-19T18:31:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/things3f</id>
+    <id>http://Kyle2501.github.com/blog2501/things3f</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[things]]></title>
-    <link href="http://kyle2501.github.com/blog2501/things"/>
+    <link href="http://Kyle2501.github.com/blog2501/things"/>
     <updated>2012-02-19T18:27:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/things</id>
+    <id>http://Kyle2501.github.com/blog2501/things</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[things3]]></title>
-    <link href="http://kyle2501.github.com/blog2501/18-things3"/>
+    <link href="http://Kyle2501.github.com/blog2501/18-things3"/>
     <updated>2012-02-19T18:27:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/18-things3</id>
+    <id>http://Kyle2501.github.com/blog2501/18-things3</id>
     <content type="html"><![CDATA[<p>eeeeeeee</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[things-go-here]]></title>
-    <link href="http://kyle2501.github.com/blog2501/things-go-here"/>
+    <link href="http://Kyle2501.github.com/blog2501/things-go-here"/>
     <updated>2012-02-19T18:14:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/things-go-here</id>
+    <id>http://Kyle2501.github.com/blog2501/things-go-here</id>
     <content type="html"><![CDATA[<p>hi hi there this is a post about who knows what but i am posting it here now lets go!</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Yay for Octopress]]></title>
-    <link href="http://kyle2501.github.com/blog2501/yay-for-octopress"/>
+    <link href="http://Kyle2501.github.com/blog2501/yay-for-octopress"/>
     <updated>2012-02-19T17:44:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/yay-for-octopress</id>
+    <id>http://Kyle2501.github.com/blog2501/yay-for-octopress</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[hope]]></title>
-    <link href="http://kyle2501.github.com/blog2501/hope"/>
+    <link href="http://Kyle2501.github.com/blog2501/hope"/>
     <updated>2012-02-19T00:22:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/hope</id>
+    <id>http://Kyle2501.github.com/blog2501/hope</id>
     <content type="html"><![CDATA[<p>de de de de de</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[howdy]]></title>
-    <link href="http://kyle2501.github.com/blog2501/00%3A07-howdy"/>
+    <link href="http://Kyle2501.github.com/blog2501/00%3A07-howdy"/>
     <updated>2012-02-19T00:07:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/00:07-howdy</id>
+    <id>http://Kyle2501.github.com/blog2501/00:07-howdy</id>
     <content type="html"><![CDATA[<p>zae
 zae
 zae</p>
@@ -114,18 +114,18 @@ a</p>
   
   <entry>
     <title type="html"><![CDATA[creating colors]]></title>
-    <link href="http://kyle2501.github.com/blog2501/00%3A04-creating-colors"/>
+    <link href="http://Kyle2501.github.com/blog2501/00%3A04-creating-colors"/>
     <updated>2012-02-19T00:04:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/00:04-creating-colors</id>
+    <id>http://Kyle2501.github.com/blog2501/00:04-creating-colors</id>
     <content type="html"><![CDATA[<p>this is what a post about colors could look like.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[rrrrrrr]]></title>
-    <link href="http://kyle2501.github.com/blog2501/00%3A00-rrrrrrr"/>
+    <link href="http://Kyle2501.github.com/blog2501/00%3A00-rrrrrrr"/>
     <updated>2012-02-19T00:00:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/00:00-rrrrrrr</id>
+    <id>http://Kyle2501.github.com/blog2501/00:00-rrrrrrr</id>
     <content type="html"><![CDATA[<p>zaezaezezae
 zae
 zae
@@ -139,36 +139,36 @@ zae</p>
   
   <entry>
     <title type="html"><![CDATA[ddddd]]></title>
-    <link href="http://kyle2501.github.com/blog2501/ddddd"/>
+    <link href="http://Kyle2501.github.com/blog2501/ddddd"/>
     <updated>2012-02-18T23:54:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/ddddd</id>
+    <id>http://Kyle2501.github.com/blog2501/ddddd</id>
     <content type="html"><![CDATA[<p>cdtae cdae ca a cadtae</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[hi theret]]></title>
-    <link href="http://kyle2501.github.com/blog2501/hi-theret"/>
+    <link href="http://Kyle2501.github.com/blog2501/hi-theret"/>
     <updated>2012-02-18T23:38:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/hi-theret</id>
+    <id>http://Kyle2501.github.com/blog2501/hi-theret</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[hi test]]></title>
-    <link href="http://kyle2501.github.com/blog2501/hi-test"/>
+    <link href="http://Kyle2501.github.com/blog2501/hi-test"/>
     <updated>2012-02-18T22:42:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/hi-test</id>
+    <id>http://Kyle2501.github.com/blog2501/hi-test</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Dissecting Octopress; Creating a New Theme [part 01]]]></title>
-    <link href="http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme"/>
+    <link href="http://Kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme"/>
     <updated>2012-02-18T17:05:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme</id>
+    <id>http://Kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme</id>
     <content type="html"><![CDATA[<p>This series of posts will be written and updated in an ongoing process until we understand best how to create a new theme for Octopress. My girl friend is doing the design &#8211; I am doing the development. We both installed Octopress this week and are running it on GitHub Pages. Her&#8217;s can be found here <a href="http://uwenna.github.com/test/">uwenna</a>.</p>
 
 <p>For now these posts act as a brainstorm with myself&#8230; then will be broken up into better sections for publishing.</p>
@@ -403,36 +403,36 @@ zae</p>
   
   <entry>
     <title type="html"><![CDATA[Food]]></title>
-    <link href="http://kyle2501.github.com/blog2501/food"/>
+    <link href="http://Kyle2501.github.com/blog2501/food"/>
     <updated>2012-02-18T01:34:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/food</id>
+    <id>http://Kyle2501.github.com/blog2501/food</id>
     <content type="html"><![CDATA[<p>This is what is eaten.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[More and More]]></title>
-    <link href="http://kyle2501.github.com/blog2501/more-and-more"/>
+    <link href="http://Kyle2501.github.com/blog2501/more-and-more"/>
     <updated>2012-02-17T23:46:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/more-and-more</id>
+    <id>http://Kyle2501.github.com/blog2501/more-and-more</id>
     <content type="html"><![CDATA[<p>bloop bloop bloop bloop</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Machine Feelings]]></title>
-    <link href="http://kyle2501.github.com/blog2501/machine-feelings"/>
+    <link href="http://Kyle2501.github.com/blog2501/machine-feelings"/>
     <updated>2012-02-17T21:22:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/machine-feelings</id>
+    <id>http://Kyle2501.github.com/blog2501/machine-feelings</id>
     <content type="html"><![CDATA[<p>Do machines have feelings? What are feelings defined as?</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[cccccccccc]]></title>
-    <link href="http://kyle2501.github.com/blog2501/cccccccccc"/>
+    <link href="http://Kyle2501.github.com/blog2501/cccccccccc"/>
     <updated>2012-02-16T04:35:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/cccccccccc</id>
+    <id>http://Kyle2501.github.com/blog2501/cccccccccc</id>
     <content type="html"><![CDATA[<p>add stuffct aecdt</p>
 ]]></content>
   </entry>

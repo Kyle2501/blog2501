@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: brainstrom | About Robots and Humans for Hackers]]></title>
-  <link href="http://kyle2501.github.com/blog2501/categories/brainstrom/atom.xml" rel="self"/>
-  <link href="http://kyle2501.github.com/blog2501/"/>
-  <updated>2012-03-22T18:34:47-04:00</updated>
-  <id>http://kyle2501.github.com/blog2501/</id>
+  <link href="http://Kyle2501.github.com/blog2501/categories/brainstrom/atom.xml" rel="self"/>
+  <link href="http://Kyle2501.github.com/blog2501/"/>
+  <updated>2012-03-22T19:03:37-04:00</updated>
+  <id>http://Kyle2501.github.com/blog2501/</id>
   <author>
     <name><![CDATA[Kyle2501]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Dissecting Octopress; Creating a New Theme [part 01]]]></title>
-    <link href="http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme"/>
+    <link href="http://Kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme"/>
     <updated>2012-02-18T17:05:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme</id>
+    <id>http://Kyle2501.github.com/blog2501/dissecting-octopress-creating-a-new-theme</id>
     <content type="html"><![CDATA[<p>This series of posts will be written and updated in an ongoing process until we understand best how to create a new theme for Octopress. My girl friend is doing the design -- I am doing the development. We both installed Octopress this week and are running it on GitHub Pages. Her's can be found here <a href="http://uwenna.github.com/test/">uwenna</a>.</p>
 
 <p>For now these posts act as a brainstorm with myself... then will be broken up into better sections for publishing.</p>

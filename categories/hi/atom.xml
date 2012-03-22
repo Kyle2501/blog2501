@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hi | About Robots and Humans for Hackers]]></title>
-  <link href="http://kyle2501.github.com/blog2501/categories/hi/atom.xml" rel="self"/>
-  <link href="http://kyle2501.github.com/blog2501/"/>
-  <updated>2012-03-22T18:34:47-04:00</updated>
-  <id>http://kyle2501.github.com/blog2501/</id>
+  <link href="http://Kyle2501.github.com/blog2501/categories/hi/atom.xml" rel="self"/>
+  <link href="http://Kyle2501.github.com/blog2501/"/>
+  <updated>2012-03-22T19:03:37-04:00</updated>
+  <id>http://Kyle2501.github.com/blog2501/</id>
   <author>
     <name><![CDATA[Kyle2501]]></name>
     
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[hope]]></title>
-    <link href="http://kyle2501.github.com/blog2501/hope"/>
+    <link href="http://Kyle2501.github.com/blog2501/hope"/>
     <updated>2012-02-19T00:22:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/hope</id>
+    <id>http://Kyle2501.github.com/blog2501/hope</id>
     <content type="html"><![CDATA[<p>de de de de de</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[howdy]]></title>
-    <link href="http://kyle2501.github.com/blog2501/00%3A07-howdy"/>
+    <link href="http://Kyle2501.github.com/blog2501/00%3A07-howdy"/>
     <updated>2012-02-19T00:07:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/00:07-howdy</id>
+    <id>http://Kyle2501.github.com/blog2501/00:07-howdy</id>
     <content type="html"><![CDATA[<p>zae
 zae
 zae</p>
@@ -42,27 +42,27 @@ a</p>
   
   <entry>
     <title type="html"><![CDATA[ddddd]]></title>
-    <link href="http://kyle2501.github.com/blog2501/ddddd"/>
+    <link href="http://Kyle2501.github.com/blog2501/ddddd"/>
     <updated>2012-02-18T23:54:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/ddddd</id>
+    <id>http://Kyle2501.github.com/blog2501/ddddd</id>
     <content type="html"><![CDATA[<p>cdtae cdae ca a cadtae</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Food]]></title>
-    <link href="http://kyle2501.github.com/blog2501/food"/>
+    <link href="http://Kyle2501.github.com/blog2501/food"/>
     <updated>2012-02-18T01:34:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/food</id>
+    <id>http://Kyle2501.github.com/blog2501/food</id>
     <content type="html"><![CDATA[<p>This is what is eaten.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[More and More]]></title>
-    <link href="http://kyle2501.github.com/blog2501/more-and-more"/>
+    <link href="http://Kyle2501.github.com/blog2501/more-and-more"/>
     <updated>2012-02-17T23:46:00-05:00</updated>
-    <id>http://kyle2501.github.com/blog2501/more-and-more</id>
+    <id>http://Kyle2501.github.com/blog2501/more-and-more</id>
     <content type="html"><![CDATA[<p>bloop bloop bloop bloop</p>
 ]]></content>
   </entry>
