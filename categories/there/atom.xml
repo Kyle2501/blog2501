@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[About Robots and Humans for Hackers]]></title>
-  <link href="http://Kyle2501.github.com/blog2501/atom.xml" rel="self"/>
+  <title><![CDATA[Category: there | About Robots and Humans for Hackers]]></title>
+  <link href="http://Kyle2501.github.com/blog2501/categories/there/atom.xml" rel="self"/>
   <link href="http://Kyle2501.github.com/blog2501/"/>
   <updated>2012-03-31T21:36:11-04:00</updated>
   <id>http://Kyle2501.github.com/blog2501/</id>
@@ -12,16 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[another tester post is this one]]></title>
-    <link href="http://Kyle2501.github.com/blog2501/another-tester-post-is-this-one"/>
-    <updated>2012-03-31T21:32:00-04:00</updated>
-    <id>http://Kyle2501.github.com/blog2501/another-tester-post-is-this-one</id>
-    <content type="html"><![CDATA[<p>Danish icing dessert cookie icing sweet chupa chups chocolate. Gummies chocolate bar lollipop caramels tiramisu pudding. Lemon drops sugar plum ice cream jujubes bear claw lollipop. Lollipop applicake muffin. Tiramisu pastry halvah soufflé liquorice powder cheesecake macaroon. Wypas powder oat cake muffin apple pie soufflé.
-Soufflé dragée gummies icing. Sugar plum applicake carrot cake jelly beans marzipan caramels icing cheesecake. Cheesecake wafer chupa chups applicake chupa chups biscuit. Candy chocolate bar soufflé marzipan. Chupa chups soufflé bear claw chocolate candy donut bear claw toffee pie. Gingerbread wafer bear claw marshmallow icing wypas. Wafer pudding gummi bears marzipan cupcake cupcake apple pie. Tiramisu caramels apple pie jujubes pie sweet roll sweet roll. Cookie powder soufflé muffin carrot cake dessert fruitcake dragée applicake.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[this is a post tester]]></title>
