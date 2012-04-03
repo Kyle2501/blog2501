@@ -1,31 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>LL Blog</title>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="files/curtain.js"></script>
-<script>
-    $(function(){
-       $('.curtains').curtain({
-           scrollSpeed: 150,
-           controls: '.menu',
-           curtainLinks: '.curtain-links'
-       });
-    });
-</script>
-
 <link rel="stylesheet" href="files/curtain.css">
 <link rel="stylesheet" href="files/base.css">
+
+<link href='http://fonts.googleapis.com/css?family=Simonetta' rel='stylesheet' type='text/css'>
+
 
 <style>
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Simonetta', cursive;
+	font-family: &#8216;Simonetta&#8217;, cursive;
 	background-color: #eee;
 }
 
@@ -33,17 +23,11 @@ body {
 	background-color: #3F3938;
 }
 
-#header_space {
-	margin-top: 300px;	
-}
-
 #content {
 	height: 100%;
 	background-color: #3F3938;
 	color: #F1E7E7;
-	margin: 0 auto;
-	width: 100%;
-	padding-top: 75px;
+	margin-top: 300px;
 }
 
 .white {
@@ -74,6 +58,11 @@ a:visited {
 	color: #FCC5D4;
 }
 
+.post_top {
+	height: 200px;
+	width: 100%;
+}
+
 .post {
 	width: 650px;
 	margin: 0 auto;
@@ -85,6 +74,7 @@ a:visited {
 	outline: 1px solid white;
 	padding: 20px;
 	z-index: 20;
+	font-family: &#8216;Simonetta&#8217;, cursive;
 }
 
 .tags {
@@ -95,7 +85,6 @@ a:visited {
 #header {
 	background-color: #F1E7E7;
 	height: 300px;
-	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: -100;
@@ -166,7 +155,10 @@ a:visited {
 	padding-top: 100px;
 	padding-bottom: 50px;
 	background-color: #3F3938;
+	margin-top: 40px;
 	border-bottom: 3px solid #FC90AA;
+	bottom: 0;
+	position: absolute;
 }
 
 #rockets {
@@ -192,22 +184,27 @@ a:visited {
 </style>
 
 </head>
-<header>
+
+<body>
+
+<ol class="curtains">
+
+<li id="intro">
 <div id="header">
 <div id="top_bar"></div>
 
 <nav>
 <div id="nav">
 <span id="nav_left">
-<li><a href="about"><img src="files/pics/about.svg" width="45px" /></a></li>
-<li><a href="mail"><img src="files/pics/mail.svg" width="45px" /></a></li>
+<li class="nav"><a href="about"><img src="files/pics/about.svg" width="45px" /></a></li>
+<li class="nav"><a href="mail"><img src="files/pics/mail.svg" width="45px" /></a></li>
 </span><!-- - /nav_left - -->
 <span id="logo">
-<li><a href="/"><img src="files/pics/logo.png" width="130px" /></a></li>
+<li class="nav"><a href="/"><img src="files/pics/logo.png" width="130px" /></a></li>
 </span><!-- - /logo - -->
 <span id="nav_right">
-<li><a href="tags"><img src="files/pics/tag.svg" width="45px" /></a></li>
-<li><a href="cloud"><img src="files/pics/cloud.svg" width="45px" /></a></li>
+<li class="nav"><a href="tags"><img src="files/pics/tag.svg" width="45px" /></a></li>
+<li class="nav"><a href="cloud"><img src="files/pics/cloud.svg" width="45px" /></a></li>
 </span><!-- - /nav_right - -->
 </div><!-- - /nav - -->
 </nav>
@@ -225,127 +222,61 @@ a:visited {
 </div><!-- - /rss - -->
 
 </div><!-- - /header - -->
-</header>
-<div id="header_space"></div>
-<body  >
 
-<div id="content">
-  <div class="blog-index">
-  
-  
-  
-    <article>
-      <div class="post">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog2501/another-tester-post-is-this-one">Another Tester Post Is This One</a></h1>
-    
-    
-      <div class="data">
-      	<img src="files/pics/clock.svg" width="35px"/>
-      	<time datetime="2012-03-31T21:32:00-04:00" pubdate>
-      		<span class='month'>March</span> <span class='day'>31,</span> 2012</time>
-      		 <img src="files/pics/rocket.svg" width="35px" />lulo.us/1a2c</div>
-    
-  </header>
-  
+</li><!-- - /intro - -->
 
 
-  <div class="entry-content"><p>Danish icing dessert cookie icing sweet chupa chups chocolate. Gummies chocolate bar lollipop caramels tiramisu pudding. Lemon drops sugar plum ice cream jujubes bear claw lollipop. Lollipop applicake muffin. Tiramisu pastry halvah soufflé liquorice powder cheesecake macaroon. Wypas powder oat cake muffin apple pie soufflé.
-Soufflé dragée gummies icing. Sugar plum applicake carrot cake jelly beans marzipan caramels icing cheesecake. Cheesecake wafer chupa chups applicake chupa chups biscuit. Candy chocolate bar soufflé marzipan. Chupa chups soufflé bear claw chocolate candy donut bear claw toffee pie. Gingerbread wafer bear claw marshmallow icing wypas. Wafer pudding gummi bears marzipan cupcake cupcake apple pie. Tiramisu caramels apple pie jujubes pie sweet roll sweet roll. Cookie powder soufflé muffin carrot cake dessert fruitcake dragée applicake.</p>
+  <li id="posts">
+    
+<div class="post_top"></div>
+
+<div class="post">
+<h1 class="entry-title"><a href="/heloo-zaezae-za-zae">heloo zaezae za zae</a></h1>
+
+<div class="data">
+	<img src="files/pics/clock.svg" width="35px"/>
+	<time datetime="2012-04-02T16:52:00-04:00" pubdate>
+		April 02, 2012</time>
+	<img src="files/pics/rocket.svg" width="35px" />lulo.us/1a2c
+</div><!-- - /data - -->
+
+<div class="entry-content"><p>Chocolate bar chocolate pastry jujubes toffee fruitcake brownie pastry chocolate cake. Icing ice cream cheesecake faworki muffin. Chocolate wafer cake. Powder icing fruitcake muffin fruitcake jelly beans chupa chups oat cake tootsie roll. Marshmallow bear claw biscuit pudding jujubes wafer. Liquorice marzipan chocolate cake oat cake. Bonbon cupcake marzipan halvah candy cupcake. Topping jelly beans toffee dragée biscuit bear claw gingerbread candy canes gummi bears. Bear claw fruitcake chupa chups halvah sweet. Faworki brownie bonbon lollipop apple pie.
+Powder candy brownie gummies halvah croissant. Pudding dragée jelly-o chupa chups marshmallow croissant cotton candy. Chupa chups fruitcake cookie jelly. Candy canes pastry bonbon oat cake bear claw sweet. Jelly beans candy jujubes applicake chupa chups ice cream cookie brownie cupcake. Macaroon sesame snaps jelly beans. Sweet roll oat cake pudding sesame snaps biscuit pudding carrot cake. Toffee ice cream gummi bears dessert fruitcake bonbon apple pie muffin chupa chups.
+Gingerbread cotton candy faworki danish powder candy macaroon soufflé jelly. Gummies halvah caramels jelly pastry macaroon dessert brownie. Pastry lollipop sesame snaps. Sugar plum gingerbread jelly sesame snaps chocolate cake cheesecake croissant liquorice brownie. Bonbon danish lemon drops gummi bears icing caramels. Cotton candy jujubes cotton candy topping dessert candy canes toffee lemon drops bonbon.</p>
+
+<p>Chocolate bar chocolate pastry jujubes toffee fruitcake brownie pastry chocolate cake. Icing ice cream cheesecake faworki muffin. Chocolate wafer cake. Powder icing fruitcake muffin fruitcake jelly beans chupa chups oat cake tootsie roll. Marshmallow bear claw biscuit pudding jujubes wafer. Liquorice marzipan chocolate cake oat cake. Bonbon cupcake marzipan halvah candy cupcake. Topping jelly beans toffee dragée biscuit bear claw gingerbread candy canes gummi bears. Bear claw fruitcake chupa chups halvah sweet. Faworki brownie bonbon lollipop apple pie.
+Powder candy brownie gummies halvah croissant. Pudding dragée jelly-o chupa chups marshmallow croissant cotton candy. Chupa chups fruitcake cookie jelly. Candy canes pastry bonbon oat cake bear claw sweet. Jelly beans candy jujubes applicake chupa chups ice cream cookie brownie cupcake. Macaroon sesame snaps jelly beans. Sweet roll oat cake pudding sesame snaps biscuit pudding carrot cake. Toffee ice cream gummi bears dessert fruitcake bonbon apple pie muffin chupa chups.
+Gingerbread cotton candy faworki danish powder candy macaroon soufflé jelly. Gummies halvah caramels jelly pastry macaroon dessert brownie. Pastry lollipop sesame snaps. Sugar plum gingerbread jelly sesame snaps chocolate cake cheesecake croissant liquorice brownie. Bonbon danish lemon drops gummi bears icing caramels. Cotton candy jujubes cotton candy topping dessert candy canes toffee lemon drops bonbon.</p>
 </div>
-  
-  <div class="tags">
-    
-  <span class="categories"><img src="files/pics/white_tag.svg" width="30px" /> </span>
-   
-  </div><!-- - /tags - -->
-  
 
 </div><!-- - /post - -->
+  </li>
 
-
-    </article>
-  
-  
-    <article>
-      <div class="post">
-
-  <header>
+  <li id="posts">
     
-      <h1 class="entry-title"><a href="/blog2501/this-is-a-post-tester">This Is a Post Tester</a></h1>
-    
-    
-      <div class="data">
-      	<img src="files/pics/clock.svg" width="35px"/>
-      	<time datetime="2012-03-31T18:53:00-04:00" pubdate>
-      		<span class='month'>March</span> <span class='day'>31,</span> 2012</time>
-      		 <img src="files/pics/rocket.svg" width="35px" />lulo.us/1a2c</div>
-    
-  </header>
-  
+<div class="post_top"></div>
 
+<div class="post">
+<h1 class="entry-title"><a href="/heloo-there-het">heloo there het</a></h1>
 
-  <div class="entry-content"><p>Jelly-o chocolate bar pudding donut gummi bears pudding donut halvah. Topping jelly beans apple pie jujubes sweet roll pudding. Topping gingerbread tart bonbon. Liquorice chocolate carrot cake fruitcake biscuit gingerbread toffee. Liquorice danish chocolate bar dessert gingerbread. Sesame snaps caramels wypas pudding pie.</p>
+<div class="data">
+	<img src="files/pics/clock.svg" width="35px"/>
+	<time datetime="2012-04-02T16:52:00-04:00" pubdate>
+		April 02, 2012</time>
+	<img src="files/pics/rocket.svg" width="35px" />lulo.us/1a2c
+</div><!-- - /data - -->
 
-<p>Ice cream jujubes cheesecake toffee jujubes tootsie roll tootsie roll applicake. Cake muffin carrot cake danish faworki applicake caramels. Gingerbread jelly cake candy canes dragée topping. Applicake ice cream apple pie gummies pudding applicake. Chocolate cake cookie gingerbread candy canes marzipan donut faworki. Fruitcake liquorice liquorice tootsie roll chupa chups. Jelly-o cupcake dragée topping jelly-o marshmallow jelly beans chupa chups. Faworki biscuit pudding gummi bears chocolate cake cotton candy tiramisu jelly-o.</p>
-
-<p>Oat cake chocolate bar jelly-o chocolate cake dessert sugar plum jelly beans. Faworki cheesecake pastry bonbon wypas apple pie muffin croissant jelly-o. Cookie donut halvah ice cream gummi bears. Cookie cake liquorice gummies cookie candy canes wypas sesame snaps. Biscuit tootsie roll muffin sesame snaps gummi bears cotton candy jelly liquorice. Ice cream fruitcake soufflé. Chocolate bar applicake cookie pudding topping bear claw. Lemon drops candy wafer cotton candy cupcake macaroon bonbon cupcake sweet. Lollipop croissant candy pudding.</p>
+<div class="entry-content"><p>Chocolate bar chocolate pastry jujubes toffee fruitcake brownie pastry chocolate cake. Icing ice cream cheesecake faworki muffin. Chocolate wafer cake. Powder icing fruitcake muffin fruitcake jelly beans chupa chups oat cake tootsie roll. Marshmallow bear claw biscuit pudding jujubes wafer. Liquorice marzipan chocolate cake oat cake. Bonbon cupcake marzipan halvah candy cupcake. Topping jelly beans toffee dragée biscuit bear claw gingerbread candy canes gummi bears. Bear claw fruitcake chupa chups halvah sweet. Faworki brownie bonbon lollipop apple pie.
+Powder candy brownie gummies halvah croissant. Pudding dragée jelly-o chupa chups marshmallow croissant cotton candy. Chupa chups fruitcake cookie jelly. Candy canes pastry bonbon oat cake bear claw sweet. Jelly beans candy jujubes applicake chupa chups ice cream cookie brownie cupcake. Macaroon sesame snaps jelly beans. Sweet roll oat cake pudding sesame snaps biscuit pudding carrot cake. Toffee ice cream gummi bears dessert fruitcake bonbon apple pie muffin chupa chups.
+Gingerbread cotton candy faworki danish powder candy macaroon soufflé jelly. Gummies halvah caramels jelly pastry macaroon dessert brownie. Pastry lollipop sesame snaps. Sugar plum gingerbread jelly sesame snaps chocolate cake cheesecake croissant liquorice brownie. Bonbon danish lemon drops gummi bears icing caramels. Cotton candy jujubes cotton candy topping dessert candy canes toffee lemon drops bonbon.</p>
 </div>
-  
-  <div class="tags">
-    
-  <span class="categories"><img src="files/pics/white_tag.svg" width="30px" /> <a class='category' href='/blog2501/categories/hello/'>hello</a>, <a class='category' href='/blog2501/categories/there/'>there</a>, <a class='category' href='/blog2501/categories/you/'>you</a></span>
-   
-  </div><!-- - /tags - -->
-  
 
 </div><!-- - /post - -->
+  </li>
 
 
-    </article>
-  
-  
-    <article>
-      <div class="post">
 
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog2501/hello-there-you">Hello There You</a></h1>
-    
-    
-      <div class="data">
-      	<img src="files/pics/clock.svg" width="35px"/>
-      	<time datetime="2012-03-26T18:11:00-04:00" pubdate>
-      		<span class='month'>March</span> <span class='day'>26,</span> 2012</time>
-      		 <img src="files/pics/rocket.svg" width="35px" />lulo.us/1a2c</div>
-    
-  </header>
-  
-
-
-  <div class="entry-content"><p>cdtaecdta ecdtae cdtae</p>
-</div>
-  
-  <div class="tags">
-    
-  <span class="categories"><img src="files/pics/white_tag.svg" width="30px" /> <a class='category' href='/blog2501/categories/blah/'>blah</a>, <a class='category' href='/blog2501/categories/there/'>there</a>, <a class='category' href='/blog2501/categories/you/'>you</a></span>
-   
-  </div><!-- - /tags - -->
-  
-
-</div><!-- - /post - -->
-
-
-    </article>
-  
-</div>
-
-
-</div>
-
-<footer>
+<li id="bottom">
 <div id="footer">
 
 <div id="rockets">
@@ -362,6 +293,26 @@ Soufflé dragée gummies icing. Sugar plum applicake carrot cake jelly beans mar
 </div></nav>
 
 </div><!-- - /footer - -->
-</footer>
+
+</li><!-- - /bottom - -->
+
+</ol><!-- - /curtains - -->
+
 </body>
+<foot>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="files/curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 150,
+           controls: '.menu',
+           curtainLinks: '.curtain-links'
+       });
+    });
+</script>
+
+</foot>
 </html>

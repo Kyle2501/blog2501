@@ -1,7 +1,7 @@
 /*
 * Curtain.js - Create an unique page transitioning system
 * ---
-* Version: 1.3
+* Version: 1.2.3
 * Copyright 2011, Victor Coulon (http://victorcoulon.fr)
 * Released under the MIT Licence
 */
@@ -16,9 +16,7 @@
             mobile: false,
             scrollButtons: {},
             controls: null,
-            curtainLinks: '.curtain-links',
-            enableKeys: true,
-            easing: 'swing'
+            curtainLinks: '.curtain-links'
         };
 
     // The actual plugin constructor
@@ -85,7 +83,7 @@
                     var position = $(newEl).attr('data-position') || null;
                     self.scrollEl.animate({
                         scrollTop:position
-                    }, self.options.scrollSpeed, self.options.easing);
+                    }, self.options.scrollSpeed).scrollTop(position);
                 }
             });
 
@@ -100,14 +98,10 @@
             this.$element = $(this.element);
             this.$li = $(this.element).find('>li');
 
-            // Webkit based browser use translate3d
-            this.options.webkit = $.browser.webkit || false;
-
             $.Android = (navigator.userAgent.match(/Android/i));
             $.iPhone = ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)));
             $.iPad = ((navigator.userAgent.match(/iPad/i)));
             $.iOs4 = (/OS [1-4]_[0-9_]+ like Mac OS X/i.test(navigator.userAgent));
-
 
             if($.iPhone || $.iPad || $.Android){
                 this.options.mobile = true;
@@ -186,23 +180,23 @@
                 if(position){
                     self.scrollEl.animate({
                         scrollTop:position
-                    }, this.options.scrollSpeed, this.options.easing);
+                    }, this.options.scrollSpeed);
                 }
 
             } else if(direction === 'top'){
                 self.scrollEl.animate({
                     scrollTop:0
-                }, self.options.scrollSpeed, self.options.easing);
+                }, self.options.scrollSpeed).scrollTop(0);
             } else if(direction === 'bottom'){
                 self.scrollEl.animate({
                     scrollTop:self.options.bodyHeight
-                }, self.options.scrollSpeed, self.options.easing);
+                }, self.options.scrollSpeed).scrollTop(0);
             } else {
                 position = $("#"+direction).attr('data-position') || null;
                 if(position){
                     self.scrollEl.animate({
                         scrollTop:position
-                    }, this.options.scrollSpeed, this.options.easing);
+                    }, this.options.scrollSpeed).scrollTop(position);
                 }
             }
             
@@ -224,52 +218,30 @@
                 self._ignoreHashChange = true;
                 if($current.prev().attr('id'))
                     window.location.hash = $current.prev().attr('id');
-                 
-       
-                $current.removeClass('current').css({marginTop: 0,'-webkit-transform': 'translate3d(0,0,0)'})
+                    
+                $current.removeClass('current').css({marginTop: 0})
                     .nextAll().css({display:'none'}).end()
                     .prev().addClass('current').css({display:'block'});
-  
-                
 
             } else if(docTop < (currentP + $current.height())){
                 // Animate the current pannel during the scroll
-                var position = -(docTop-currentP);
-                if(self.options.webkit)
-                    $current.css('-webkit-transform','translate3d(0px,'+position+'px,0px)');
-                else
-                    $current.css({marginTop:position});
+                $current.css({marginTop:-(docTop-currentP)});
 
                 // If there is a fixed element in the current panel
                 if($fixed.length){
                     var dataTop = parseInt($fixed.attr('data-top'), 10);
                     if((docTop-currentP+windowHeight) >= currentHeight && $fixed.css('position') === 'fixed'){
-      
-                        if(self.options.webkit){
-                            $fixed.css({
-                                position: 'absolute',
-                                '-webkit-transform':'translate3d(0px,'+ Math.abs(docTop-currentP)+'px,0px)'
-                            });
-                        } else {
-                            $fixed.css({
-                                position: 'absolute',
-                                top: Math.abs(docTop-currentP + dataTop)
-                            });
-                        }
-                        
+                        $fixed.css({
+                            position: 'absolute',
+                            top: Math.abs(docTop-currentP + dataTop)
+                        });
 
                     } else if((docTop-currentP+windowHeight) <= currentHeight && $fixed.css('position') === 'absolute'){
                         $fixed.css({
                             position: 'fixed',
                             top: dataTop
                         });
-                    } else if($fixed.css('position') === 'fixed' && self.options.webkit) {
-                        $fixed.css({
-                            '-webkit-transform':'translate3d(0px,'+Math.abs(position)+'px,0px)'
-                        });
                     }
-
-                    
                 }
 
                 
@@ -378,33 +350,31 @@
                     self.scrollEvent();
                 });
             }
-            
-            if(self.options.enableKeys) {
-                $(document).on('keydown', function(e){
-                    if(e.keyCode === 38 || e.keyCode === 37) {
-                        self.scrollToPosition('up');
-                        e.preventDefault();
-                        return false;
-                    }
-                    if(e.keyCode === 40 || e.keyCode === 39){
-                        self.scrollToPosition('down');
-                        e.preventDefault();
-                        return false;
-                    }
-                    // Home button
-                    if(e.keyCode === 36){
-                        self.scrollToPosition('top');
-                        e.preventDefault();
-                        return false;
-                    }
-                    // End button
-                    if(e.keyCode === 35){
-                        self.scrollToPosition('bottom');
-                        e.preventDefault();
-                        return false;
-                    }
-                });
-            }
+
+            $(document).on('keydown', function(e){
+                if(e.keyCode === 38 || e.keyCode === 37) {
+                    self.scrollToPosition('up');
+                    e.preventDefault();
+                    return false;
+                }
+                if(e.keyCode === 40 || e.keyCode === 39){
+                    self.scrollToPosition('down');
+                    e.preventDefault();
+                    return false;
+                }
+                // Home button
+                if(e.keyCode === 36){
+                    self.scrollToPosition('top');
+                    e.preventDefault();
+                    return false;
+                }
+                // End button
+                if(e.keyCode === 35){
+                    self.scrollToPosition('bottom');
+                    e.preventDefault();
+                    return false;
+                }
+            });
 
             if(self.options.scrollButtons){
                 if(self.options.scrollButtons.up){
@@ -433,7 +403,7 @@
                     if(position){
                         self.scrollEl.animate({
                             scrollTop:position
-                        }, self.options.scrollSpeed, self.options.easing);
+                        }, self.options.scrollSpeed).scrollTop(position);
                     }
                     return false;
                 });

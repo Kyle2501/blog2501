@@ -1,6 +1,4 @@
 
-/* Curtain.js - Example page */
-
 /* RESET */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
@@ -15,7 +13,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Base Style */
 body {
-    font: 16px/1.2 "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-family: 'Simonetta', cursive;
     color: #555;
 }
 
@@ -45,6 +43,7 @@ pre {
 /* Sliding panels */
 .curtains>li {
     box-shadow: 0 1px 14px 3px #333;
+    background-color: #3F3938;
 }
 
 .curtains>li:nth-child(2n+1) {
@@ -153,93 +152,4 @@ pre {
     margin-bottom: 12px;
 }
 
-/* right menu */
-.menu {
-    z-index: 2;
-    position: fixed;
-    bottom:0;
-    text-align: right;
-    left: 0;
-}
 
-.menu button {
-    display: block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    background-color: #383838;
-    position: relative;
-    text-align: center;
-    color: #e6e6e6;
-    text-decoration: none;
-    border:0;
-    cursor:pointer;
-}
-
-.menu a:hover {
-    color: #FFF;
-}
-
-.menu a:active {
-    background-color: #333;
-}
-
-/* Twitter follow */
-.follow {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 14px;
-    text-align: center;
-    color: #3e90e2;
-}
-
-.follow:hover {
-    color: #285c93;
-}
-
-/* Download button (from twitter bootstrap) */
-a.btn{
-    color: white;
-    text-decoration: none;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
-    background-color: #383838;
-    background-repeat: repeat-x;
-    background-image: -moz-linear-gradient(top, #555 0%, #383838 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555), color-stop(100%,#383838));
-    background-image: -webkit-linear-gradient(top, #555 0%,#383838 100%);
-    background-image: -ms-linear-gradient(top, #555 0%,#383838 100%);
-    background-image: -o-linear-gradient(top, #555 0%,#383838 100%);
-    background-image: linear-gradient(top, #555 0%,#383838 100%);
-    border: 1px solid #292929;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 2px rgba(0, 0, 0, .4);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 2px rgba(0, 0, 0, .4);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 2px rgba(0, 0, 0, .4);
-    font-size: 18px;
-    padding: 8px 18px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-a.btn span{opacity:.6;}
-a.btn:hover{
-    background-image: -moz-linear-gradient(top, #404040 0%, #383838 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#404040), color-stop(100%,#383838));
-    background-image: -webkit-linear-gradient(top, #404040 0%,#383838 100%);
-    background-image: -ms-linear-gradient(top, #404040 0%,#383838 100%);
-    background-image: -o-linear-gradient(top, #404040 0%,#383838 100%);
-    background-image: linear-gradient(top, #404040 0%,#383838 100%);
-}
-a.btn:active{
-    background-image: -moz-linear-gradient(top, #222 0%, #383838 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#222), color-stop(100%,#383838));
-    background-image: -webkit-linear-gradient(top, #222 0%,#383838 100%);
-    background-image: -ms-linear-gradient(top, #222 0%,#383838 100%);
-    background-image: -o-linear-gradient(top, #222 0%,#383838 100%);
-    background-image: linear-gradient(top, #222 0%,#383838 100%);
-}
-
-a.btn.btn-small{
-    font-size:14px;
-    padding:5px 11px;
-}
