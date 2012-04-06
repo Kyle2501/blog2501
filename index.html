@@ -6,16 +6,13 @@
 
 <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
+
 </head>
 
 <body>
 
-<ol class="curtains">
 
-<li id="intro">
 <div id="header">
-<div id="top_bar"></div>
-
 <nav>
 <div id="nav">
 <span id="nav_left">
@@ -46,21 +43,16 @@
 
 </div><!-- - /header - -->
 
-</li><!-- - /intro - -->
-
-<li class="cover">
-    <div class="cover-wrapper">
     
-        <div class="post">
+        <div class="cover">
         <img src="files/pics/cat.jpg" width="100%" height="100%" />
+        <div class="title"><h1 class="post_title">Title Goes Here!</h1></div>
         </div><!-- - /post - -->
-        
-    </div>
-</li>
 
 
 
-  <li id="posts">
+
+  <div id="posts">
     
 <div class="space"></div>
 
@@ -85,9 +77,9 @@ Gingerbread cotton candy faworki danish powder candy macaroon soufflé jelly. Gu
 </div>
 
 </div><!-- - /post - -->
-  </li>
+  </div>
 
-  <li id="posts">
+  <div id="posts">
     
 <div class="space"></div>
 
@@ -108,11 +100,10 @@ Gingerbread cotton candy faworki danish powder candy macaroon soufflé jelly. Gu
 </div>
 
 </div><!-- - /post - -->
-  </li>
+  </div>
 
 
 
-<li id="bottom">
 <div id="footer">
 
 <div id="rockets">
@@ -130,25 +121,20 @@ Gingerbread cotton candy faworki danish powder candy macaroon soufflé jelly. Gu
 
 </div><!-- - /footer - -->
 
-</li><!-- - /bottom - -->
 
-</ol><!-- - /curtains - -->
 
 </body>
 <foot>
 
 <link href='http://fonts.googleapis.com/css?family=Simonetta' rel='stylesheet' type='text/css'>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="files/curtain.js"></script>
-<script>
-    $(function(){
-       $('.curtains').curtain({
-           scrollSpeed: 150,
-           controls: '.menu',
-           curtainLinks: '.curtain-links'
-       });
-    });
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="files/fittext.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("h1").fitText(1.2);
+  });
 </script>
 
 </foot>
